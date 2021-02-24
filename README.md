@@ -8,7 +8,7 @@
 - 백엔드 (Java, Kotlin, Spring Boot, JPA, Junit5, Kotest, Mockito, Mockk)
 - 인프라 (MySQL, Docker, Kuberates)
 - 개발 방법론 (OOP, Clean Code, TDD)
-- 기타 (Github)
+- 기타 (Git, Github)
 
 ### :star: 어떤걸 했어요?
 
