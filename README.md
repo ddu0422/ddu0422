@@ -1,76 +1,109 @@
-# Hello, I'm Duho Lee (이두호) 👋
+# 이두호
 
-## 🚀 Core Competencies
+**Backend Engineer · PLE** · 약 6년 경력
 
-- **Architecture**
-  - Monolith → MSA 전환 설계 주도 (배포 시간 **83% 단축** · 롤백 **93% 단축**, MAU 200만 서비스)
-- **Performance**
-  - Index 전략 및 쿼리 튜닝으로 P95 Latency **2~3초 → 0.01초** 달성
-- **Stability**
-  - Datadog 기반 Observability 구축으로 SLA **70% → 99.9%** 달성 및 손실 **1,400만원 대비**
-- **Cost**
-  - 로그 감사로 Datadog 비용 **월 2,600만원 → 1만원** 절감
-  - ECS Rightsizing으로 **월 100만원 추가 절감**
-- **Leadership**
-  - PLE로서 개발 프로세스 재설계, 운영 예외처리 **0건** · 배포 사이클 **월 1회 → 주 1~2회** 단축
-  - 우아한테크코스 4기·6기 리뷰어 (62명, 감동 리뷰어 수상, 평균 9.66/10)
+백엔드 기능을 구현하고 운영하면서 문제가 생기면 사용자의 요청 흐름부터 확인해 원인을 좁혀 왔습니다. 성능과 안정성 그리고 구현 복잡도와 운영 비용을 함께 살펴 현재 상황에 맞는 선택을 하려고 합니다.
 
-<br/>
-
-## 💼 Experience
-
-### (주)콜로세움코퍼레이션 (2024.04 ~ 재직중)
-- **조직 리딩**: 오퍼레이션/PM 요청이 기획 리뷰 없이 바로 개발로 이어져
-  정책 충돌 기능 누적 및 운영 예외처리 지속 증가
-  - 개인 권한 강화 대신 의사결정 프로세스 자체를 재설계
-  - 운영 예외처리 **0건** 달성 · 배포 사이클 **월 1회 → 주 1~2회** 단축
-  - [팀 자율 의사결정 기반의 개발 조직 체계 구축](https://dhistory.tistory.com/273)
-- **안정성 개선**: 모니터링 부재로 장애를 사후에 인지하는 구조
-  - DevOps 부재 환경에서 유지보수 비용 최소화를 위해 Datadog 선택
-  - SLA **70% → 99.9%** 달성 · 장애 조기 인지로 손실 **1,400만원 대비**
-- **비용 최적화**: Datadog 대시보드 구축 후 ECS 리소스 과도 할당 확인
-  - 실제 사용량 기반 Rightsizing 진행
-  - 인프라 비용 **월 100만원 절감**
-
-### 비엔디알에스(주) (2023.11 ~ 2024.04)
-- **성능 개선**: 데이터 누적에 따라 offset 전체 스캔 비용이 증가해 게시글 조회 응답시간 4초까지 늘어나는 문제 발생
-  - 페이지 번호 기반 UX가 불필요한 서비스 특성상 cursor 기반으로 전환
-  - 조회 성능 **85% 향상** (4초 → 0.6초)
-- **쿼리 최적화**: 복잡한 연관관계로 fetch join 적용 시
-  다른 API에 N+1 사이드 이펙트 전파 위험
-  - QueryDSL로 영향 범위를 격리하여 N+1 **4건 해결**
-- **안정성 개선**: ECS Rolling Update 기반 **24/7 무중단 서비스** 운영
-  - 롤백 프로세스 최적화 **(15분 → 3분)**
-
-### (주)클래스101 (2020.11 ~ 2023.07)
-- **아키텍처 개선**: 회원 서비스를 MSA 첫 번째 분리 대상으로 선정
-  - 상품·결제 전 도메인의 기준이 되는 회원이 SPOF라고 판단
-  - 배포 시간 **83% 단축** (90분 → 15분)
-- **배포 안정성**: EKS Pod 롤백 5분 문제 해결을 위해 Feature Flag 도입
-  - 코드 배포 없이 **5초 이내 롤백** 가능한 구조로 전환
-  - 롤백 시간 **93% 단축**
-- **비용 최적화**: 로그 필터링 및 레벨 조정으로 불필요한 로그 제거
-  - 운영 비용 **99% 절감** (월 2,600만원 → 1만원)
-- **비즈니스 성과**: TV 환경 특성에 맞게 QR 기반 로그인 설계
-  - 신규 매출 **월 1,000만원** 견인
-- **대용량 처리**: @Scheduled 대비 메모리 안정성 확보를 위해 Spring Batch 선택
-  - Chunk 기반으로 휴면 유저 **260만 건** 개인정보 파기 및 분리 보관
+<table>
+  <tr>
+    <td width="25%" valign="top">
+      <strong>P · Problem</strong><br><br>
+      실제로 해결해야 하는 문제는 무엇인가?
+    </td>
+    <td width="25%" valign="top">
+      <strong>J · Judgment</strong><br><br>
+      어떤 선택지가 있는가?<br>
+      어떤 Trade-off를 감수할 것인가?
+    </td>
+    <td width="25%" valign="top">
+      <strong>A · Action</strong><br><br>
+      어떻게 실행하고 검증할 것인가?
+    </td>
+    <td width="25%" valign="top">
+      <strong>R · Result</strong><br><br>
+      무엇이 실제로 달라졌는가?
+    </td>
+  </tr>
+</table>
 
 <br />
 
-## 🌱 Activities
+## Experience
+
+### 콜로세움코퍼레이션 · Backend Engineer / PLE
+**2024.04 ~ 현재**
+
+입고부터 출고까지의 흐름이 멈추면 창고 현장 업무도 함께 멈춥니다. 롤백이 끝날 때까지 작업이 중단되고 복구 뒤에는 밀린 업무를 처리하기 위한 추가 인력도 필요할 수 있습니다. 그래서 장애를 사후 문의로 발견하는 데서 벗어나 현장 업무에 중요한 API를 먼저 살펴보는 데 집중했습니다.
+
+#### WMS 핵심 흐름 안정화
+
+전체 약 450개 API 가운데 입고부터 출고까지의 업무 흐름에 직접 영향을 주는 API 약 40개를 분류하고 Datadog에서 오류율과 응답시간을 계속 확인했습니다. 기존에는 SnO 문의와 QA를 거쳐 문제 API를 뒤늦게 찾는 일이 많았습니다. 운영 안정성을 한 번에 큰 구조 변경으로 해결하기보다 중요한 흐름의 이상을 일찍 발견하고 원인에 맞게 고치는 편이 현실적이라고 판단했습니다.
+
+확인한 오류 중 상당수는 예외 처리나 작은 코드 수정으로 해결할 수 있었습니다. 개선 배포는 창고 업무가 끝나 시스템 사용량이 낮은 시간에 진행했고 문제가 생기면 빠르게 원복할 수 있도록 Feature Flag를 사용했습니다. 월 평균 MTTR은 약 80분 수준이었습니다. 당시 가용성은 정확한 계측값이 없어 이력서 성과 수치로 제시하지 않습니다. 이후 관리 기준은 가용성 및 MTTR 그리고 API 응답시간으로 두었습니다.
+
+#### 화면 처리 시간 180초에서 0.8초로 개선
+
+특정 화면이 처리되는 데 최대 약 180초가 걸렸습니다. 처음부터 DB나 인프라 지표를 파기보다 Chrome Network Tab에서 사용자가 화면을 열 때 발생하는 요청을 확인했습니다. 비슷한 API가 최대 약 100회 호출되고 있었고 DB에 있는 화면 데이터가 Backend API 응답에 포함되지 않아 Frontend가 다른 API를 반복 호출하는 구조였습니다.
+
+병목은 DB 처리량이 아니라 불필요한 네트워크 왕복이었습니다. 캐시와 비동기 처리 또는 인프라 증설을 추가하면 해결 범위와 운영 복잡도가 커질 수 있어 필요한 데이터를 기존 API 응답에 포함하고 벌크 조회하도록 바꿨습니다. 데이터 크기는 크게 늘지 않았습니다. 화면 처리 시간은 약 180초에서 약 0.8초로 줄었고 반복 호출을 제거했습니다. 함께 확인한 여러 API도 1~3초 이상 걸리던 응답을 500ms 이하로 낮췄습니다.
+
+#### 팀의 의사결정 기준 정리
+
+비슷한 운영 질문이 반복되고 업무 판단이 개인 경험이나 당시 의견에 따라 달라지는 일이 있었습니다. PLE가 결정을 모두 가져가면 팀의 자율성이 낮아지고 PLE 자신이 병목이 될 수 있다고 봤습니다. 그래서 팀원이 같은 기준으로 판단할 수 있도록 영향 범위와 기존 구현의 배경 그리고 롤백 가능성 · 데이터 정합성 · 장애 원인 파악 가능성 · 결정 기록 여부를 문서화했습니다.
+
+Production DB 직접 변경과 Feature Flag 그리고 QA와 단계적 배포 · 장애 대응과 롤백 · 일정 추정 · 타 팀과 의견이 다를 때의 escalation 기준도 함께 정리했습니다. 이후 개인 경험과 감정에 기대던 논의가 공통 기준을 놓고 진행됐고 반복 질문이 줄었습니다. PLE가 없는 상황에도 팀원이 기준서를 확인해 업무를 이어갈 수 있게 됐습니다. <br /><br /> [PLE 역할과 팀 의사결정에 관한 글](https://dhistory.tistory.com/273)
+
+<br />
+
+### 비엔디알에스
+**2023.11 ~ 2024.04**
+
+- Offset 기반 조회를 개선해 주요 Query 응답시간을 약 4초에서 0.6초로 줄였습니다.
+- QueryDSL로 N+1 문제 4건을 해결했습니다.
+- ECS Rolling Deployment를 운영했고 Rollback 소요 시간을 약 15분에서 약 3분으로 줄였습니다.
+
+### CLASS101
+**2020.11 ~ 2023.07**
+
+- Node.js / MongoDB 기반 Monolith의 일부 도메인을 Spring Boot / MySQL 서비스로 분리했습니다. 배포시간은 약 90분에서 15분으로 줄었습니다.
+- 로그를 점검하고 수집 범위와 레벨을 조정해 Datadog 비용을 월 약 2,600만원에서 약 1만원으로 낮췄습니다.
+- B tv QR 로그인과 카테고리 관련 기능을 개발했습니다.
+
+<br />
+
+## 일하는 방식
+
+- **요청 흐름에서 병목을 찾습니다.** 성능 문제는 사용자가 겪는 화면과 요청에서 시작해 Web → API → DB → Infra 순서로 확인합니다. 특정 계층을 먼저 가정하지 않고 병목이 있는 위치를 좁힙니다.
+- **선택의 비용을 함께 봅니다.** 성능뿐 아니라 복잡도와 개발 속도 그리고 운영 안정성 및 유지보수 비용을 놓고 현재 상황에 맞는 선택을 합니다.
+- **원인에 맞는 작은 해결을 먼저 찾습니다.** 새 기술이나 복잡한 아키텍처를 도입하기 전에 원인을 확인하고 작은 변경으로 해결 가능한지 살핍니다.
+
+<br />
+
+## Skills
+
+Java · Kotlin · Spring Boot · JPA · MySQL · QueryDSL · AWS · ECS · Datadog
+
+<br />
+
+## 최근 학습
+
+아래 주제는 현재 학습 중이며 실무 경험과 구분합니다.
+
+Distributed Systems · Transactional Outbox · Kafka · Debezium · Saga · Idempotency · RTO / RPO · SPOF · Failure / Recovery
+
+<br />
+
+## Activities
 
 | 기간 | 활동 | 비고 |
-|---|---|---|
-| 2024.09 ~ 2025.01 | F-Lab Java BackEnd Deep-Dive | |
+| :--- | :--- | :--- |
 | 2024.02 ~ 2024.06 | 우아한테크코스 6기 리뷰어 | 30명 리뷰 · 평균 9.66/10 |
-| 2022.02 ~ 2022.06 | 우아한테크코스 4기 리뷰어 | 32명 리뷰 · 감동 리뷰어 수상 |
-| 2019.05 ~ 2019.12 | 우아한테크코스 1기 수료 | |
-
+| 2022.02 ~ 2022.06 | 우아한테크코스 4기 리뷰어 | 32명 리뷰 · 감동 리뷰어 선정 (4명) |
+| 2019.05 ~ 2019.12 | 우아한테크코스 1기 수료 |  |
 
 <br />
 
-## 🏫 Education
+## Education
 
 | 기간 | 학교 | 전공 |
 |---|---|---|
@@ -79,27 +112,15 @@
 
 <br />
 
-## 🎖 Certification
+## Certification
 
-| 취득연도 | 자격증 |
+| 취득연도 | 자격 |
 |---|---|
 | 2021 | 정보처리기사 |
 
 <br />
 
-## 🛠 Tech Stack
+## Links
 
-### ⚙️ Backend
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white) ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white) ![JPA](https://img.shields.io/badge/JPA-6DB33F?style=for-the-badge&logo=hibernate&logoColor=white) 
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white) ![JUnit5](https://img.shields.io/badge/JUnit5-25A162?style=for-the-badge&logo=junit5&logoColor=white) ![Rest Docs](https://img.shields.io/badge/REST_Docs-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
-
-<br/>
-
-### ☁️ DevOps & Infrastructure
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![Datadog](https://img.shields.io/badge/Datadog-632CA6?style=for-the-badge&logo=datadog&logoColor=white) ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white)
-
-<br/>
-
-## 📫 Contact
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dev.ddu0422@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/%EB%91%90%ED%98%B8-%EC%9D%B4-634a96245/)
+- GitHub: [ddu0422](https://github.com/ddu0422)
+- Blog: [dhistory.tistory.com](https://dhistory.tistory.com/)
