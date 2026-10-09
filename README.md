@@ -13,8 +13,6 @@ PLE로서 업무 프로세스를 수립하고 PM · FE · BE · UI/UX · QA 간 
 
 ## Experience
 
-<br />
-
 ### 콜로세움코퍼레이션
 Backend Engineer / PLE · 2024.05 - 재직중
 
